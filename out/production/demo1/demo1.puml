@@ -1,0 +1,13 @@
+@startuml
+package "个人通讯录系统" {
+    [Server] --> [Handler] : 处理客户端请求
+    [Client] --> [Server] : 发送请求
+    [Server] --> [Contact] : 管理联系人数据
+    [Handler] --> [Contact] : 处理联系人对象
+}
+
+package "联系人信息" {
+
+
+}
+@enduml
